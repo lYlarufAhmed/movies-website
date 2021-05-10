@@ -14,7 +14,7 @@ export default function MovieDetail(props) {
     let [movieData, setMovieData] = useState({})
 
     async function getData() {
-        let response = await fetch(`${baseURL}/${movieId}${API_KEY}`)
+        let response = await fetch(`${baseURL}/${movieId}${API_KEY}&append_to_response=videos`)
         let data = await response.json()
         setMovieData(data)
         setLoading(false)
