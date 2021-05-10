@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {useHistory} from 'react-router-dom'
+// import {useHistory} from 'react-router-dom'
 
 const Wrapper = styled.div`
 width: 100%;
@@ -78,7 +78,7 @@ width: 4rem;
 `
 
 export default function DetailWrapper(props){
-    const history = useHistory()
+    // const history = useHistory()
     // let handleOnClick = (name)=> history.push(`/movies/${name.toLowerCase()}`)
     let handleOnClick = ()=>{}
     return (
